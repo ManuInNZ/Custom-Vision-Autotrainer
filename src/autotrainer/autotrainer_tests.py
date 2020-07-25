@@ -10,6 +10,9 @@ from autotrainer.blob.models.container import Container
 from autotrainer.autotrainer import Autotrainer
 from autotrainer.custom_vision.domain import Domain
 from autotrainer.custom_vision.classification_type import ClassificationType
+from dotenv import load_dotenv
+
+load_dotenv()
 
 conn_string = os.environ['STORAGE_ACCOUNT_CONNECTION_STRING']
 CVTK = os.environ['CV_TRAINING_KEY']

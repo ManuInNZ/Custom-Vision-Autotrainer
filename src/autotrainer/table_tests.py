@@ -8,6 +8,10 @@ from autotrainer.table.table_client import (
 from azure.cognitiveservices.vision.customvision.training.models import (
     ImageCreateResult,
     Image)
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 conn_string = os.environ['STORAGE_ACCOUNT_CONNECTION_STRING']
 test_container = "test_container"
